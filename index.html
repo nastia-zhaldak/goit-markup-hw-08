@@ -53,24 +53,69 @@
                     </use>
                 </svg>
             </button>
-            <div class="mob-menu">
-                <button class="close-menu-btn">
-                    <svg class="mob-menu-icon" width="40" height="40">
-                        <use href="./images/icons.svg#icon-close-mob-menu">
-                        </use>
-                    </svg>
-                    <ul class="mob-menu-list list">
-                        <li class="mob-menu-list__item"><a href=""
-                                class="mob-menu-list__link current link active">Студия</a>
-                        </li>
-                        <li class="mob-menu-list__item"><a
-                                href="./portfolio.html"
-                                class="mob-menu-list__link link">Портфолио</a>
-                        </li>
-                        <li class="mob-menu-list__item"><a href=""
-                                class="mob-menu-list__link link">Контакты</a>
-                        </li>
-                    </ul>
+            <div class="mob-menu is-hidden">
+                <div class="container">
+                    <div class="mob-menu-top">
+                        <button class="close-menu-btn">
+                            <svg class="mob-menu-icon" width="40" height="40">
+                                <use
+                                    href="./images/icons.svg#icon-close-mob-menu">
+                                </use>
+                            </svg>
+                        </button>
+                        <ul class="mob-menu-list list">
+                            <li class="mob-menu-list__item"><a href=""
+                                    class="mob-menu-list__link current link active">Студия</a>
+                            </li>
+                            <li class="mob-menu-list__item"><a
+                                    href="./portfolio.html"
+                                    class="mob-menu-list__link link">Портфолио</a>
+                            </li>
+                            <li class="mob-menu-list__item"><a href=""
+                                    class="mob-menu-list__link link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu-bottom">
+                        <ul class="mob-menu-connection-list list">
+                            <li class="mob-menu-connection-list__item"><a
+                                    class="mob-menu-connection-list__tel link"
+                                    href="tel:+380961111111">
+                                    <!-- <svg class="connection-list__icon" width="10"
+                                    height="16">
+                                    <use
+                                        href="./images/icons.svg#icon-smartphone">
+                                    </use>
+                                </svg>-->+38 096 111 11 11
+                                </a></li>
+                            <li class="mob-menu-connection-list__item"><a
+                                    class="mob-menu-connection-list__email link"
+                                    href="maito:info@devstudio.com">
+                                    <!-- <svg class="connection-list__icon" width="16"
+                                    height="12">
+                                    <use
+                                        href="./images/icons.svg#icon-envelope">
+                                    </use>
+                                </svg> -->
+                                    info@devstudio.com
+                                </a></li>
+                        </ul>
+                        <ul class="mob-menu-networks-list">
+                            <li class="mob-menu-networks-list__item list">
+                                Instagram
+                            </li>
+                            <li class="mob-menu-networks-list__item list">
+                                Twitter
+                            </li>
+                            <li class="mob-menu-networks-list__item list">
+                                Facebook
+                            </li>
+                            <li class="mob-menu-networks-list__item list">
+                                LinkedIn
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -663,6 +708,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
