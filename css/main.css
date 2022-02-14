@@ -128,8 +128,8 @@ body {
 
 .modal {
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  height: 609px;
   background-color: var(--main-background-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -143,6 +143,20 @@ body {
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-close {
@@ -286,8 +300,8 @@ body {
 }
 
 .modal-check-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -306,6 +320,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .icon-check {
@@ -356,10 +377,17 @@ body {
 
 .modal-check-link {
   color: var(--accent-color);
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration-skip-ink: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-check-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .is-hidden {
@@ -629,7 +657,7 @@ body {
   background-position: center;
   background-size: cover;
   width: 100%;
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -658,6 +686,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-hero-1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero-1x.jpg);
   }
@@ -1297,7 +1326,13 @@ body {
 
 .footer-right__input {
   margin-bottom: 20px;
-  width: 450px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-right__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
