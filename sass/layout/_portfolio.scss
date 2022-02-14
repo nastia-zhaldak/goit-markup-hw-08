@@ -1,9 +1,5 @@
 .portfolio {
   width: 100%;
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 .portfolio-btn {
   cursor: pointer;
@@ -41,9 +37,17 @@
 }
 .portfolio-list {
   display: block;
-  text-align: center;
   padding-top: 60px;
   padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 }
 .areas-info {
   padding: 20px;

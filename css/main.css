@@ -403,7 +403,6 @@ body {
   .connection-list {
     display: block;
     margin-top: 21px;
-    margin-left: auto;
   }
 }
 
@@ -412,9 +411,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 0;
   }
 }
@@ -458,12 +456,17 @@ body {
   margin-right: 50px;
 }
 
-.header-list__item:last-child {
-  margin-right: 0;
+.connection-list__item {
+  margin-bottom: 10px;
 }
 
-.connection-list__item {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .connection-list__item {
+    margin-bottom: 0;
+  }
+  .connection-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .connection-list__link {
@@ -497,7 +500,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--main-title-color);
-  margin: 24px 93px 25px 0;
+  margin: 24px 84px 25px 0;
 }
 
 .accent {
@@ -654,8 +657,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-hero.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-hero-1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero-1x.jpg);
   }
 }
 
@@ -1380,13 +1383,6 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
-  .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .portfolio-btn {
   cursor: pointer;
   font-family: inherit;
@@ -1432,9 +1428,23 @@ body {
 
 .portfolio-list {
   display: block;
-  text-align: center;
   padding-top: 60px;
   padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 }
 
 .areas-info {
